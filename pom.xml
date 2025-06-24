@@ -60,6 +60,7 @@
             <version>${junit5.version}</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
@@ -72,6 +73,7 @@
             <version>3.24.2</version>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
     <build>
         <plugins>
@@ -91,7 +93,7 @@
                         <include>**/*Test.java</include>
                         <include>**/Test*.java</include>
                         <include>**/*TestSuite.java</include>
-                        <include>**/When*.java</include>
+                        <include>**/Add*.java</include>
                     </includes>
                     <systemPropertyVariables>
                         <webdriver.base.url>${webdriver.base.url}</webdriver.base.url>

@@ -46,7 +46,7 @@ serenity {
     reports = ["single-page-html"]
 
     // // Specify the root package of any JUnit acceptance tests
-    testRoot="starter"
+    testRoot="todomvc"
 }
 
 test.finalizedBy(aggregate)

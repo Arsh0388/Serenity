@@ -29,7 +29,7 @@ public class BaseClass {
         options.addArguments("--incognito");
 
         Map<String, Object> prefs = new HashMap<>();
-        prefs.put("download.default_directory", "/Users/arsharora/IdeaProjects/Serenity/download_files\n"); // Change path
+        prefs.put("download.default_directory", "/Users/arsharora/IdeaProjects/Serenity/download_files\n"); // Change path // setting default directory
         prefs.put("download.prompt_for_download", false);
         prefs.put("plugins.always_open_pdf_externally", true); // Force download for PDFs
         options.setExperimentalOption("prefs", prefs);
@@ -58,4 +58,11 @@ public class BaseClass {
     }
 
 
+    // open new tab
+//driver.switchTo().newWindow(WindowType.TAB);
+// driver.navigate().back();     // go back in browser history
+//driver.navigate().forward();  // go forward in browser history
+//driver.navigate().refresh();  // refresh current page
+    // switch back to main page
+//driver.switchTo().defaultContent();
 }
